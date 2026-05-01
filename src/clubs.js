@@ -1,0 +1,18 @@
+export let clubs = [
+  { img: "./clup/arsenal.png", name: "arsenal" },
+  { img: "./clup/barcelona.png", name: "barsa" },
+  { img: "./clup/bayren.png", name: "bayern" },
+  { img: "./clup/BVB.png", name: "bvb" },
+  { img: "./clup/Chelsea.png", name: "chelse" },
+  { img: "./clup/inter.png", name: "inter" },
+  { img: "./clup/juventus.png", name: "juventus" },
+  { img: "./clup/leverKusen.png", name: "leverkusen" },
+  { img: "./clup/LIVAERPOOL.png", name: "liverpoll" },
+  { img: "./clup/manCity.png", name: "man city" },
+  { img: "./clup/manUnited.png", name: "man United" },
+  { img: "./clup/milan.png", name: "milan" },
+  { img: "./clup/Paris.png", name: "psg" },
+  { img: "./clup/RealMadrid.png", name: "real" },
+  { img: "./clup/roma.png", name: "roma" },
+  { img: "./clup/atletco.png", name: "atletico" },
+];

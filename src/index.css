@@ -1,13 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Regular !important;
+}
+@font-face {
+  font-family: Regular;
+  src: url(/Fonts/TheYearofHandicrafts-Regular.otf.ttf);
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #121212;
 }
+.cards {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px !important;
+  background: #004d4073 !important;
+  backdrop-filter: blur(20px) !important;
+  border: 3px solid #ffffff !important;
+  box-shadow:
+    7px 7px 8px 0 rgba(0, 0, 0, 0.5),
+    0 0 20px 0 rgba(0, 0, 0, 0.25) !important;
+  margin-bottom: 10px !important;
+}
+.cards:hover {
+  box-shadow:
+    7px 7px 8px 0 rgba(0, 0, 0, 0.5),
+    0 0 20px 0 rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.pitch {
+  width: 100vw;
+  height: 100vh;
+  aspect-ratio: 16 / 9;
+  background: #1f8f3a; /* أخضر */
+  border: 6px solid #fff; /* حدود الملعب */
+  border-radius: 14px;
+}
+@media (max-width: 768px) {
+  .pitch {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  .cards {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .playerCard {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .playerDiv {
+    flex-direction: row !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .App {
+    flex-direction: column;
+  }
+  .scoorB {
+    display: flex !important;
+    flex-direction: column !important;
+    font-size: 10px !important;
+    height: 150px !important;
+  }
+  .scrollB {
+    flex-direction: column !important;
+    width: 30% !important;
+    gap: 0 !important;
+    align-items: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024) {
+    .cards {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .playerCard {
+    width: 200px !important;
+    height: 200px !important;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
